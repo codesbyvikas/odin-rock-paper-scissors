@@ -11,7 +11,6 @@ playerChoice.forEach((button) => {
     button.addEventListener("click", (event) => {
         var choice = button.value;
         resultShow.innerHTML = ''; 
-        console.log(obj[choice]);
 
         if (obj[choice] >= 1 && obj[choice] <= 3) {
 
@@ -39,6 +38,7 @@ function getComputerChoice() {
         let p2 = document.createElement('p');
         p2.textContent = "Computer Choice: Rock";
         resultShow.append(p2);
+        console.log("Computer choice: Rock");
     } else if (choice == 2) {
         let p2 = document.createElement('p');
         p2.textContent = "Computer Choice: Paper";
